@@ -1,0 +1,1033 @@
+/* =========================
+   HOME GLOBAL
+   ========================= */
+
+.deep-home {
+  min-height: 100vh;
+  background: #020812;
+  color: #eaf8ff;
+  overflow-x: hidden;
+}
+
+/* =========================
+   GLOBAL ELEMENTS
+   ========================= */
+
+.deep-kicker {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #53d9ff;
+  margin-bottom: 18px;
+}
+
+.deep-btn {
+  border: 1px solid rgba(120, 225, 255, 0.28);
+  background: rgba(255, 255, 255, 0.03);
+  color: #eaf8ff;
+  padding: 15px 28px;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  backdrop-filter: blur(16px);
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.deep-btn:hover {
+  border-color: rgba(120, 225, 255, 0.8);
+  box-shadow: 0 0 35px rgba(83, 217, 255, 0.18);
+  transform: translateY(-3px);
+}
+
+.deep-btn--filled {
+  background: #53d9ff;
+  color: #00111f;
+  border-color: #53d9ff;
+}
+
+/* =========================
+   HERO / PAGE DE GARDE
+   ========================= */
+
+.deep-hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 34px 56px 70px;
+  display: grid;
+  grid-template-columns: 0.95fr 0.7fr;
+  align-items: end;
+  gap: 70px;
+  overflow: hidden;
+}
+
+.deep-hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deep-hero__shade {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 38%, rgba(83, 217, 255, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(2, 8, 18, 0.28), #020812 96%);
+}
+
+/* NAVBAR */
+
+.deep-nav {
+  position: absolute;
+  top: 28px;
+  left: 56px;
+  right: 56px;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deep-nav__brand {
+  font-size: 13px;
+  letter-spacing: 8px;
+  color: #eaf8ff;
+}
+
+.deep-nav div {
+  display: flex;
+  gap: 26px;
+}
+
+.deep-nav a {
+  color: rgba(234, 248, 255, 0.58);
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.deep-nav a:hover {
+  color: #53d9ff;
+}
+
+/* HERO TEXTE GAUCHE */
+
+.deep-hero__left {
+  position: relative;
+  z-index: 3;
+  max-width: 680px;
+  padding-bottom: 30px;
+}
+
+.deep-hero__left h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 6vw, 92px);
+  font-weight: 300;
+  line-height: 0.98;
+  letter-spacing: -2px;
+  color: #eaf8ff;
+  margin-bottom: 28px;
+}
+
+.deep-hero__left p:not(.deep-kicker) {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: rgba(234, 248, 255, 0.62);
+}
+
+/* HERO CARTE JOURNAL D’EXPÉDITION */
+
+.deep-logbook {
+  position: relative;
+  z-index: 3;
+  justify-self: end;
+  width: min(420px, 100%);
+  padding: 30px;
+  border: 1px solid rgba(180, 242, 255, 0.18);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.025)
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.deep-logbook__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(234, 248, 255, 0.48);
+}
+
+.deep-logbook__main p {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #53d9ff;
+  margin-bottom: 8px;
+}
+
+.deep-logbook__main h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 54px;
+  font-weight: 300;
+  color: #eaf8ff;
+  margin-bottom: 42px;
+}
+
+.deep-logbook__data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(180, 242, 255, 0.12);
+  margin-bottom: 34px;
+}
+
+.deep-logbook__data div {
+  background: rgba(2, 8, 18, 0.65);
+  padding: 18px;
+}
+
+.deep-logbook__data span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(234, 248, 255, 0.42);
+  margin-bottom: 8px;
+}
+
+.deep-logbook__data strong {
+  font-size: 16px;
+  color: #eaf8ff;
+  font-weight: 400;
+}
+
+.deep-logbook__link {
+  display: inline-block;
+  color: #53d9ff;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: none;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  transition: opacity 0.3s ease;
+}
+
+.deep-logbook__link:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   MISSIONS / PARCOURS
+   ========================= */
+
+.deep-missions {
+  position: relative;
+  padding: 130px 56px;
+  background:
+    radial-gradient(circle at 15% 30%, rgba(83, 217, 255, 0.1), transparent 30%),
+    #020812;
+}
+
+.deep-section-head {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
+
+.deep-section-head h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  color: #eaf8ff;
+}
+
+/* lignes de profondeur */
+
+.deep-depth-list {
+  max-width: 980px;
+  margin-top: 70px;
+  border-top: 1px solid rgba(180, 242, 255, 0.14);
+}
+
+.deep-depth-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 1.2fr;
+  gap: 34px;
+  align-items: center;
+  padding: 42px 0;
+  border-bottom: 1px solid rgba(180, 242, 255, 0.14);
+}
+
+.deep-depth-row__depth {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 54px;
+  font-weight: 300;
+  color: rgba(83, 217, 255, 0.45);
+}
+
+.deep-depth-row__line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(83, 217, 255, 0.8),
+    rgba(83, 217, 255, 0)
+  );
+}
+
+.deep-depth-row__content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #eaf8ff;
+  margin-bottom: 10px;
+}
+
+.deep-depth-row__content p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: rgba(234, 248, 255, 0.55);
+  max-width: 460px;
+}
+
+/* =========================
+   GALERIE / CARTES PINTEREST
+   ========================= */
+
+.deep-gallery {
+  position: relative;
+  padding: 80px 56px 90px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(83, 217, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 85% 70%, rgba(120, 225, 255, 0.12), transparent 34%),
+    #061a2c;
+  overflow: hidden;
+}
+
+/* texte galerie */
+
+.deep-gallery__text {
+  max-width: 680px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.deep-gallery__text h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  color: #eaf8ff;
+}
+
+.deep-gallery__text p:last-child {
+  margin-top: 24px;
+  max-width: 520px;
+  color: rgba(234, 248, 255, 0.58);
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+/* zone cartes éparpillées */
+
+.deep-pinterest {
+  position: relative;
+  min-height: 760px;
+  max-width: 1180px;
+  margin: -20px auto 0;
+}
+
+/* style commun des cartes */
+
+.deep-pin {
+  position: absolute;
+  border: 1px solid rgba(180, 242, 255, 0.28);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(160, 230, 255, 0.18),
+      rgba(160, 230, 255, 0.06)
+    );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.34),
+    0 0 60px rgba(83, 217, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  transition: border-color 0.45s ease, box-shadow 0.45s ease;
+}
+
+.deep-pin:hover {
+  border-color: rgba(180, 242, 255, 0.55);
+  box-shadow:
+    0 34px 100px rgba(0, 0, 0, 0.42),
+    0 0 90px rgba(83, 217, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+}
+
+/* images des cartes */
+
+.deep-pin__img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.deep-pin__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.9s ease;
+}
+
+.deep-pin:hover .deep-pin__img img {
+  transform: scale(1.07);
+}
+
+/* texte dans les cartes */
+
+.deep-pin__body {
+  padding: 22px 22px 24px;
+}
+
+.deep-pin__body span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7ee7ff;
+  margin-bottom: 10px;
+}
+
+.deep-pin__body h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 29px;
+  font-weight: 300;
+  color: #eaf8ff;
+  margin-bottom: 10px;
+}
+
+.deep-pin__body p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(234, 248, 255, 0.62);
+}
+
+/* positions des cartes galerie */
+.deep-pinterest {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* taille commune */
+
+.deep-pin {
+  position: relative;
+  width: 280px;
+}
+
+/* cartes 1 et 3 plus hautes */
+
+.deep-pin--1,
+.deep-pin--3 {
+  margin-top: 0;
+}
+
+/* cartes 2 et 4 plus basses */
+
+.deep-pin--2,
+.deep-pin--4 {
+  margin-top: 120px;
+}
+
+/* image commune */
+
+.deep-pin__img {
+  height: 340px;
+}
+/* =========================
+   DESTINATIONS
+   ========================= */
+
+.deep-destinations {
+  padding: 130px 56px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(83, 217, 255, 0.11), transparent 28%),
+    #020812;
+}
+
+.deep-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.deep-destination {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid rgba(180, 242, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.deep-destination:hover {
+  transform: translateY(-8px);
+  border-color: rgba(83, 217, 255, 0.55);
+}
+
+.deep-destination img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.deep-destination:hover img {
+  transform: scale(1.06);
+}
+
+.deep-destination__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 8, 18, 0.08),
+      rgba(2, 8, 18, 0.88)
+    );
+}
+
+.deep-destination__overlay span {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #53d9ff;
+  margin-bottom: 12px;
+}
+
+.deep-destination__overlay h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: #eaf8ff;
+  margin-bottom: 10px;
+}
+
+.deep-destination__overlay p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(234, 248, 255, 0.58);
+}
+
+/* =========================
+   RÉSERVATION / CTA
+   ========================= */
+
+.deep-reserve {
+  position: relative;
+  min-height: 85vh;
+  padding: 120px 56px;
+  background:
+    radial-gradient(circle at center, rgba(83, 217, 255, 0.18), transparent 28%),
+    #061a2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.deep-reserve__card {
+  position: relative;
+  z-index: 2;
+  width: min(820px, 100%);
+  text-align: center;
+  padding: 70px 54px;
+  border: 1px solid rgba(180, 242, 255, 0.18);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.025));
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.deep-reserve__card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  color: #eaf8ff;
+}
+
+.deep-reserve__card p:not(.deep-kicker) {
+  max-width: 560px;
+  margin: 28px auto 36px;
+  color: rgba(234, 248, 255, 0.58);
+  line-height: 1.9;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .deep-hero {
+    grid-template-columns: 1fr;
+    padding: 96px 24px 60px;
+  }
+
+  .deep-nav {
+    left: 24px;
+    right: 24px;
+  }
+
+  .deep-nav div {
+    display: none;
+  }
+
+  .deep-logbook {
+    justify-self: stretch;
+  }
+
+  .deep-missions,
+  .deep-gallery,
+  .deep-destinations,
+  .deep-reserve {
+    padding: 90px 24px;
+  }
+
+  .deep-depth-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .deep-depth-row__line {
+    width: 120px;
+  }
+
+  .deep-pinterest {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .deep-pin,
+  .deep-pin--1,
+  .deep-pin--2,
+  .deep-pin--3,
+  .deep-pin--4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    transform: none;
+  }
+
+  .deep-pin--1 .deep-pin__img,
+  .deep-pin--2 .deep-pin__img,
+  .deep-pin--3 .deep-pin__img,
+  .deep-pin--4 .deep-pin__img {
+    height: 340px;
+  }
+
+  .deep-destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deep-reserve__card {
+    padding: 46px 26px;
+  }
+}
+
+/* =========================
+   DIVIDERS
+   ========================= */
+
+.deep-divider {
+  position: relative;
+  padding: 34px 56px;
+  background: #020812;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.deep-divider span {
+  flex: 1;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(83, 217, 255, 0.75),
+    transparent
+  );
+
+  box-shadow: 0 0 24px rgba(83, 217, 255, 0.35);
+}
+
+.deep-divider p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(234, 248, 255, 0.42);
+  white-space: nowrap;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.deep-footer {
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 20% 0%,
+      rgba(83, 217, 255, 0.12),
+      transparent 30%
+    ),
+    #010610;
+
+  padding: 110px 56px 40px;
+
+  border-top: 1px solid rgba(180, 242, 255, 0.12);
+
+  overflow: hidden;
+}
+
+/* glow arrière */
+
+.deep-footer::before {
+  content: "";
+
+  position: absolute;
+  top: -180px;
+  left: 50%;
+
+  width: 700px;
+  height: 700px;
+
+  transform: translateX(-50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(83, 217, 255, 0.12),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+/* titre */
+
+.deep-footer h2 {
+  position: relative;
+  z-index: 2;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(72px, 12vw, 160px);
+  font-weight: 300;
+
+  letter-spacing: 18px;
+  line-height: 0.9;
+
+  color: #eaf8ff;
+
+  margin-bottom: 28px;
+
+  text-shadow:
+    0 0 40px rgba(83, 217, 255, 0.08),
+    0 0 80px rgba(83, 217, 255, 0.04);
+}
+
+/* texte intro */
+
+.deep-footer > div:first-child p:not(.deep-kicker) {
+  max-width: 520px;
+
+  color: rgba(234, 248, 255, 0.55);
+
+  line-height: 1.9;
+  font-size: 14px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* data */
+
+.deep-footer__data {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 80px;
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(180, 242, 255, 0.12);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.deep-footer__data span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: rgba(234, 248, 255, 0.48);
+}
+
+/* copyright */
+
+.deep-footer__copy {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 80px;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: rgba(234, 248, 255, 0.32);
+}
+
+/* =========================
+   RESPONSIVE FOOTER
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .deep-divider {
+    padding: 28px 24px;
+  }
+
+  .deep-divider p {
+    white-space: normal;
+  }
+
+  .deep-footer {
+    padding: 90px 24px 34px;
+  }
+
+  .deep-footer__data {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .deep-footer h2 {
+    letter-spacing: 10px;
+  }
+}
+
+.deep-reserve {
+  position: relative;
+  overflow: hidden;
+}
+
+.deep-reserve__video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.deep-reserve__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(2, 8, 18, 0.72);
+
+  z-index: 1;
+}
+
+.deep-reserve__card {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   SIDEBAR MENU
+   ========================= */
+
+.deep-sidebar-toggle {
+  position: fixed;
+  top: 28px;
+  right: 32px;
+  z-index: 120;
+
+  width: 54px;
+  height: 54px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(180, 242, 255, 0.14);
+
+  background: rgba(255,255,255,0.04);
+
+  backdrop-filter: blur(14px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  padding: 0 14px;
+
+  cursor: pointer;
+}
+
+.deep-sidebar-toggle span {
+  height: 1px;
+  width: 100%;
+
+  background: #eaf8ff;
+
+  transition: all 0.35s ease;
+}
+
+.deep-sidebar-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.deep-sidebar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.deep-sidebar-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* sidebar */
+
+.deep-sidebar {
+  position: fixed;
+  top: 0;
+  right: -420px;
+
+  width: 420px;
+  height: 100vh;
+
+  z-index: 110;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 26, 44, 0.94),
+      rgba(2, 8, 18, 0.98)
+    );
+
+  backdrop-filter: blur(28px);
+
+  border-left: 1px solid rgba(180, 242, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 70px;
+
+  transition: right 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.deep-sidebar.active {
+  right: 0;
+}
+
+.deep-sidebar a {
+  color: #eaf8ff;
+
+  text-decoration: none;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 300;
+
+  margin-bottom: 22px;
+
+  transition: all 0.35s ease;
+}
+
+.deep-sidebar a:hover {
+  color: #53d9ff;
+  transform: translateX(10px);
+}
+
+.deep-depth-row__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.deep-depth-row__top strong {
+  font-size: 18px;
+  color: #53d9ff;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.deep-depth-row__meta {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(180, 242, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.deep-depth-row__meta span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(234, 248, 255, 0.48);
+}
